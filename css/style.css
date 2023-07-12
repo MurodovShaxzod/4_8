@@ -1,0 +1,217 @@
+@import url(https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;800;900&display=swap);
+body {
+  background: radial-gradient(134.34% 134.34% at 50% 0%, #1F3757 0%, #131537 100%) no-repeat;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+h1 {
+  color: #FFF;
+  text-align: center;
+  text-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+  font-family: BarlowSemiCondensed;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+
+h3 {
+  color: #FFF;
+  text-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+  font-family: BarlowSemiCondensed;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-bottom: 63px;
+}
+
+.game {
+  position: relative;
+  margin-bottom: 78px;
+}
+
+header {
+  width: 700px;
+  height: 150px;
+  margin: 48px auto 64px auto;
+  border-radius: 15px;
+  border: 3px solid rgba(255, 255, 255, 0.29);
+  display: flex;
+  justify-content: space-between;
+}
+header .logo {
+  width: 200px;
+  height: 155px;
+  padding: 27px 0 29px 33px;
+}
+header .score {
+  width: 150px;
+  border-radius: 8px;
+  background: linear-gradient(0deg, #F3F3F3 0%, #FFF 100%);
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+  margin: 18px 24px 18px 0;
+  text-align: center;
+}
+header .score p {
+  color: #2A45C2;
+  font-family: BarlowSemiCondensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.5px;
+  padding-top: 16px;
+  margin: 0;
+}
+header .score span {
+  color: #565468;
+  text-align: center;
+  font-family: BarlowSemiCondensed;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+  padding-bottom: 16px;
+}
+
+.main {
+  background-image: url(/img/Path.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  text-align: center;
+}
+.main img {
+  position: relative;
+  top: 25px;
+  width: 198px;
+  height: 203px;
+}
+.main div {
+  width: 240px;
+  height: 250px;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+.main div:hover {
+  background-color: rgba(255, 255, 255, 0.192);
+}
+.main .qogoz {
+  display: inline-block;
+  margin-right: 40px;
+}
+.main .qaychi {
+  display: inline-block;
+  margin-left: 40px;
+}
+.main .tosh {
+  display: block;
+  margin: 24px auto 0 auto;
+}
+
+.rulesBtn {
+  padding: 11px 36px 10px 37px;
+  color: #FFF;
+  text-align: center;
+  font-family: BarlowSemiCondensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.5px;
+  background-color: transparent;
+  border-radius: 8px;
+  border: 1px solid #FFF;
+  margin: 4px 0 32px 0;
+  position: absolute;
+  bottom: -100px;
+  right: -80px;
+  transition: all 0.4s ease;
+}
+
+.rulesBtn:hover {
+  background-color: #FFF;
+  color: #3B4262;
+}
+
+.win-main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.qaychi-win {
+  background-image: url(/img/qaychi.png);
+  background-size: 292px 300px;
+  background-repeat: no-repeat;
+  width: 292px;
+  height: 300px;
+  cursor: pointer;
+}
+
+.qogoz-win {
+  background-image: url(/img/qogoz.png);
+  background-size: 292px 300px;
+  background-repeat: no-repeat;
+  width: 292px;
+  height: 300px;
+  cursor: pointer;
+}
+
+.tosh-win {
+  background-image: url(/img/tosh.png);
+  background-size: 292px 300px;
+  background-repeat: no-repeat;
+  width: 292px;
+  height: 300px;
+  cursor: pointer;
+}
+
+.play-again {
+  padding: 15px 62px 14px 60px;
+  color: #3B4262;
+  font-family: BarlowSemiCondensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.5px;
+  background-color: #FFF;
+  border-radius: 8px;
+  background: linear-gradient(0deg, #F3F3F3 0%, #FFF 100%);
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+  border: none;
+  transition: all 0.4s ease;
+}
+
+.play-again:hover {
+  color: #DB2E4D;
+}
+
+.win-main {
+  display: none;
+}
+
+.who-won {
+  text-align: center;
+}
+
+.modal-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 415px;
+  z-index: 100;
+  cursor: pointer;
+  display: none;
+}
+.modal-img img {
+  width: 400px;
+  height: 415px;
+}/*# sourceMappingURL=style.css.map */
